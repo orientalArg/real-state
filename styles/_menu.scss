@@ -1,0 +1,33 @@
+.menu {
+    top: 0;
+    right: 0;
+    z-index: 99;
+    max-width: 450px;
+    width: 90vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    padding: 40px 20px 25vh 0;
+    justify-content: space-between;
+    background: linear-gradient(#00acac, #006e6e);
+    &-top {
+        align-items: center;
+        justify-content: space-evenly;
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .close-menu {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
+    .link {
+        font-size: 20px;
+        margin: 25px auto;
+        width: fit-content;
+        font-family: sans-serif, monospace, serif;
+    }
+}

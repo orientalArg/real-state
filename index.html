@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a real state Landing Page i made for my portfolio showcase, not a real business intended.">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/house.svg" type="image/x-icon">
+    <title>Simple Real Estate Demo</title>
+</head>
+<body>
+    <header class="flex shadow" id="header">
+        <div class="flex center logo" title="Main page">
+            <a href="./index.html"><p>REALSTATE</p></a>
+            <img src="./images/house.svg" alt="house logo">
+        </div>
+        <div class="burguer" title="Open Menu" id="burguer"><img src="./images/menu-btn.svg"></div>
+        <nav class="center">
+            <div class="flex center phone-ctn" id="phone-ctn">
+                <span id="tooltip" class="tooltip">Copied</span>
+                <p>&phone;</p><input class="link phone" type="text" value="(800) 123-322-321" id="phone"></input>
+            </div>
+            <a href="./index.html#about" class="link">About</a>
+            <a href="./index.html#about" class="link">For Selling</a>
+            <a href="" class="link" title="Administration login">Sign In &rarr;</a>
+        </nav>
+    </header>
+    <div class="menu" id="menu">
+        <div class="flex menu-top">
+            <div class="flex center logo" title="Main page">
+                <a href="./index.html"><p>REALSTATE</p></a>
+                <img src="./images/house.svg" alt="house logo">
+            </div>
+            <img src="./images/close-btn-x.svg" class="close-menu" id="close-menu" title="Close Menu">
+        </div>
+        <nav>
+            <div class="link">About Us</div>
+            <div class="link">For Selling</div>
+            <div class="link">Sign in &rarr;</di>
+        </nav>
+    </div>
+    <div class="hero flex">
+        <div class="flex center hero-welcome">
+            <p class="title"><span>Save</span> the most, selling with us.</p>
+            <div>
+                <q>The leading realtor in europe.</q> 
+                <p>The &euro;uroSeller.</p>
+            </div>
+        </div>
+        <div class="flex hero-contact center" id="contact">
+            <form class="flex center shadow">
+                <div class="title flex center"><p>Contact Us</p></div>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Direction">
+                <input type="number" placeholder="Phone Number">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="Send" class="send" id="send">
+            </form>
+        </div>
+    </div>
+    <div class="features">
+        <p class="features-title"><span>You</span> don't have to worry about anything</p>
+        <div class="flex center cards-ctn">
+            <div class="flex center card-parent">
+                <div class="card">
+                    <div class="flex center card--top"><img src="./images/monedas.jpg" alt="Cents in jair"></div>
+                    <div class="flex card--bottom">
+                        <p class="title">We manage everything</p>
+                        <p class="description">We negociate the price, make the house tours and even manage the contracts and all the legals affairs. Our goal is to get you the highest price for your house.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex center card-parent">
+                <div class="card">
+                    <div class="flex center card--top"><img src="./images/interior.jpg" alt="A kitchen"></div>
+                    <div class="flex card--bottom">
+                        <p class="title">We make your house look unique.</p>
+                        <p class="description">We take care of making a marketing campaign with professional photography and a blueprint. Then we announce the house in our page and shows it to our clients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex center card-parent">
+                <div class="card">
+                    <div class="flex center card--top"><img src="./images/tipo.jpg" alt="Man with a suit"></div>
+                    <div class="flex card--bottom">
+                        <p class="title">You'll be in touch with an expert.</p>
+                        <p class="description">One of our real estate experts will contact you at the sign of the contract. He or she will be responsable for manage your home from the beginning, to the keys delivery. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media flex center">
+        <p class="title">Follow us here!</p>
+        <div class="flex center icons">
+            <a class="icon" data-title="Facebook" href="https://facebook.com" target="_blank"> <img src="./images/facebook.svg" alt="logo"> </a>
+            <a class="icon" data-title="Google +" href="https://plus.google.com" target="_blank"> <img src="./images/google+.svg" alt="logo"> </a>
+            <a class="icon" data-title="Instagram" href="https://instagram.com" target="_blank"> <img src="./images/instagram.svg" alt="logo"> </a>
+            <a class="icon" data-title="Pinterest" href="https://pinterest.com" target="_blank"> <img src="./images/pinterest.svg" alt="logo"> </a>
+        </div>
+    </div>   
+    <footer class="flex">
+        <div class="flex ftr-ctn">
+            <div class="ftr-column">
+                <p class="ftr-title">About Us</p>
+                <p class="ftr-item ftr-link">Who we are</p>
+                <p class="ftr-item ftr-link">Frecuently<br>asked questions</p>
+                <p class="ftr-item ftr-link">Blog</p>
+                <a href="index.html#contact" class="ftr-item ftr-link">Contact</a>
+            </div>
+            <div class="ftr-column">
+                <p class="ftr-title">Houses</p>
+                <p class="ftr-item ftr-link">For selling</p>
+                <p class="ftr-item ftr-link">Virtual tours</p>
+                <p class="ftr-item ftr-link">Sell with us</p>
+                <p class="ftr-item ftr-link">Our Marketing plan</p>
+            </div>
+            <div class="ftr-column">
+                <p class="ftr-title ftr-phone"">Call us<p>
+                <p class="ftr-item">&phone; <span>Phone Number</span><br>(800) 123-322-321</p>
+                <p class="ftr-item"><span>Monday</span> to <span>Friday</span><br>From <span>7am</span> to <span>6pm</span></p>
+                <p class="ftr-item"><span>Saturday</span> & <span>Sunday</span><br>From <span>8am</span> to <span>2pm</span></p>
+            </div>
+        </div>
+            <div class="author"><p>This page was designed & coded by<a href="https://github.com/orientalArg" target="_blank"> Joaquin R.</a> || All the images belong to <a href="https://pixabay.com/photos">Pixabay</a> and their respective authors</p></div>    
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>

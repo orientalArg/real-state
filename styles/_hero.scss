@@ -1,0 +1,114 @@
+.hero {
+    gap: 40px;
+    overflow-x: hidden;
+    padding: 40px 15px;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: space-between;
+    background-position: center center;
+    background-image: url(../images/hero.jpg);
+    @include for-tablet-landscape-up {
+        padding: 40px;
+        flex-direction: row;
+    }
+    &-welcome {
+        gap: 40px;
+        margin: 0 auto;
+        padding: 50px;
+        text-align: left;
+        flex-direction: column;
+        background: #ffffffaf;
+        animation: slide-in--left .8s ease;
+        max-width: 500px;
+        width: 100%;
+        @include for-tablet-landscape-up {
+            margin: 0;
+            max-width: none;
+            width: none;
+        }
+        .title {
+            width: 100%;
+            color:#303030;
+            font-size: 70px;
+            font-weight: 900;
+            font-family: serif, Verdana, Geneva, Tahoma, sans-serif;
+            @include for-desktop-up {
+                width: 65%;
+                font-size: 75px;
+            }
+            span {
+                text-decoration: underline #25aaaa;
+            }
+        }
+        q {
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #464646;
+        }
+    }
+    &-contact {
+        animation: slide-in--right .8s ease;
+        form {
+            gap: 25px;
+            max-width: 500px;
+            width: 100%;
+            background: #fff;
+            border-radius: 5px;
+            height: fit-content;
+            padding: 0 0 35px 0;
+            flex-direction: column;
+            @include for-tablet-landscape-up {
+                width: 400px;
+            }
+            .title {
+                width: 100%;
+                height: 80px;
+                font-family: sans-serif, monospace, serif;
+                background: #ececec;
+                p {
+                    color: #008b8b;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            input, textarea {
+                border: none;
+                height: 40px;
+                max-width: 85%;
+                min-width: 85%;
+                font-size: 16px;
+                color: #686868;
+                background: transparent;
+                border-bottom: solid 2px #008b8b;
+                &:focus {
+                    color: #000;
+                }
+            }
+            textarea {
+                min-height: 75px;
+                max-height: 150px;
+            }
+            .send {
+                color: #fff;
+                cursor: pointer;
+                font-weight: 600;
+                border-radius: 3px;
+                background: #008b8b;
+                &:hover {
+                    background: #008b8bc7;
+                }
+            }
+        }
+    }
+}
+@keyframes slide-in--left {
+    0% {transform: translateX(-30vw);}
+    100% {transform: translateX(-0vw);}
+}
+@keyframes slide-in--right {
+    0% {transform: translateX(30vw);}
+    100% {transform: translateX(0vw);}
+}
